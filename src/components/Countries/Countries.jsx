@@ -24,11 +24,11 @@ const Countries = ({countriesPromise}) => {
 
     return (
         <div>
-            <h1>Traveling Countries: {countries.length} </h1>
+            <h1>My Traveling Countries: {countries.length} </h1>
             <h3>Traveled so far: {visitedCountries.length} </h3>
             <div className='visited_flag_container'>
                 {
-                    visitedFlags.map((flag, index) => <img key={index} src={flag}></img>)
+                    visitedFlags.map((flag, index) => <img key={index} src={flag} className='image'></img>)
                 }
             </div>
             <ol>

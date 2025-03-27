@@ -24,7 +24,7 @@ const Country = ({country, handleVisitedCountries, handleVisitedFlag}) => {
     return (
         <div className={`country ${visited && 'country_visited'}`}>
             <h3>Name: {country.name.common} </h3>   
-            <img src={country.flags.png} alt="" />
+            <img src={country.flags.png} alt="" className='image'/>
             <p>Independent: {country.independent? 'Free': 'Not free' }</p>
             <p>Population: {country.population}</p>
             <button className={visited ? 'btn_visited' : 'btn_not_visited'} onClick={handleVisited}>
