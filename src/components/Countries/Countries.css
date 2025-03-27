@@ -3,3 +3,9 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+.visited_flag_container img{
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
